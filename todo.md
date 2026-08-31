@@ -1,6 +1,7 @@
-# React key warning fix
+# Visual-editor verification
 
-- [x] Trace every list render in Home.tsx, including nested fragments.
-- [x] Add stable unique keys to the list elements that React reconciles.
-- [x] Run type-check and production build.
-- [x] Verify the page and save a corrected checkpoint.
+- [x] Review every changed image source and item text in Home.tsx.
+- [x] Remove malformed URLs and restore the shared image-card presentation style.
+- [x] Preserve intentional visual-editor changes that are valid and aligned with the menu.
+- [x] Run type-check, production build, and responsive preview verification.
+- [x] Save and deliver a new checkpoint.

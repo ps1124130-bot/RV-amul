@@ -203,7 +203,7 @@ const menuItems: MenuItem[] = [
   { id: "jalebi-rabri", name: "Jalebi with Rabri", category: "Jalebi Specials", description: "100 gm jalebi with creamy rabri", price: 80, image: dishImages["jalebi-rabri"], tag: "Popular" },
   { id: "extra-rabri", name: "Extra Rabri", category: "Jalebi Specials", description: "A small serving of creamy rabri", price: 30, image: dishImages["extra-rabri"], note: "Small serving" },
   { id: "amul-cup", name: "Amul Cup", category: "Amul Ice Creams", description: "Cold, creamy and ready to scoop", price: 30, image: dishImages["amul-cup"], note: "125 ml" },
-  { id: "amul-tub", name: "Amul Tub", category: "Amul Ice Creams", description: "A little more of your favourite", price: 40, image: dishImages["amul-tub"], note: "125 ml" },
+  { id: "amul-tub", name: "Amul Icecream", category: "Amul Ice Creams", description: "A little more of your favourite", price: null, image: dishImages["amul-tub"], note: "125 ml" },
   { id: "amul-tricone", name: "Amul Tricone", category: "Amul Ice Creams", description: "Cone, chocolate and ice cream", price: 50, image: dishImages["amul-tricone"] },
   { id: "amul-bricks", name: "Amul Bricks", category: "Amul Ice Creams", description: "Take home a creamy classic", price: 120, image: dishImages["amul-bricks"], note: "500 ml" },
   { id: "amul-sundae", name: "Amul Special Sundae", category: "Amul Ice Creams", description: "A layered little celebration", price: 110, image: dishImages["amul-sundae"], tag: "Special", popular: true },
