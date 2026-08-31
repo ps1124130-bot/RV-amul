@@ -53,18 +53,28 @@ type OrderType = "pickup" | "delivery";
 const heroImage = "/manus-storage/rv-amul-hero_3120ec68.jpg";
 const shakeImage = "/manus-storage/rv-amul-shake_e4c9dfdf.jpg";
 const jalebiImage = "/manus-storage/rv-amul-jalebi_66c816e7.jpg";
+const bhatureImage = "/manus-storage/rv-amul-bhature_b2a87815.jpg";
+const kulchaImage = "/manus-storage/rv-amul-kulcha_dd9115f1.jpg";
+const sandwichImage = "/manus-storage/rv-amul-sandwich_e0d2fc48.jpg";
+const snacksImage = "/manus-storage/rv-amul-evening-snacks_5a28cbc2.jpg";
+const dessertBowlImage = "/manus-storage/rv-amul-dessert-bowl_88c90b47.jpg";
+const basicShakesImage = "/manus-storage/rv-amul-basic-shakes_ac9f4e65.jpg";
+const premiumShakesImage = "/manus-storage/rv-amul-premium-shakes_b2d5419c.jpg";
+const specialShakesImage = "/manus-storage/rv-amul-special-shakes_36649a29.jpg";
+const signatureShakesImage = "/manus-storage/rv-amul-signature-shakes_43d4360d.jpg";
+const iceCreamImage = "/manus-storage/rv-amul-ice-cream_89cc1dc1.jpg";
 const markImage = "/manus-storage/rv-amul-mark_d4ef08ba.png";
 
 const categoryImages: Record<string, string> = {
-  "Breakfast Specials": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=85",
-  "Nutri Kulcha": "https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=900&q=85",
-  Shakes: shakeImage,
-  Sandwiches: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85",
-  "Thick Shakes": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=900&q=85",
-  "Evening Snacks": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=85",
+  "Breakfast Specials": bhatureImage,
+  "Nutri Kulcha": kulchaImage,
+  Shakes: premiumShakesImage,
+  Sandwiches: sandwichImage,
+  "Thick Shakes": specialShakesImage,
+  "Evening Snacks": snacksImage,
   "Jalebi Specials": jalebiImage,
-  "Amul Ice Creams": "https://images.unsplash.com/photo-1579954115545-a95591f28bfc?auto=format&fit=crop&w=900&q=85",
-  "Amul Desserts & Beverages": "https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=85",
+  "Amul Ice Creams": iceCreamImage,
+  "Amul Desserts & Beverages": dessertBowlImage,
   "Amul Dairy Products": "https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=900&q=85",
 };
 
@@ -95,32 +105,32 @@ const menuItems: MenuItem[] = [
   { id: "nutri-plate", name: "Nutri Kulcha Plate", category: "Nutri Kulcha", description: "Fresh nutri with 2 kulche", price: 50, image: categoryImages["Nutri Kulcha"], popular: true },
   { id: "nutri-special", name: "Nutri Kulcha Special", category: "Nutri Kulcha", description: "Extra nutri, butter & salad", price: 70, image: categoryImages["Nutri Kulcha"], tag: "Special" },
   { id: "extra-kulcha", name: "Extra Kulcha", category: "Nutri Kulcha", description: "Golden, crisp and warm", price: 20, image: categoryImages["Nutri Kulcha"], note: "Per piece" },
-  { id: "chocolate-shake", name: "Chocolate Shake", category: "Shakes", description: "Silky chocolate with real milk", price: 90, image: shakeImage, tag: "Basic", popular: true },
-  { id: "vanilla-shake", name: "Vanilla Shake", category: "Shakes", description: "Creamy vanilla, softly sweet", price: 90, image: shakeImage, tag: "Basic" },
-  { id: "strawberry-shake", name: "Strawberry Shake", category: "Shakes", description: "Fruity, creamy and refreshing", price: 90, image: shakeImage, tag: "Basic" },
-  { id: "mango-shake", name: "Mango Shake", category: "Shakes", description: "Mango sunshine in a glass", price: 90, image: shakeImage, tag: "Basic" },
-  { id: "butterscotch-shake", name: "Butterscotch Shake", category: "Shakes", description: "Caramel notes with a smooth finish", price: 90, image: shakeImage, tag: "Basic" },
-  { id: "oreo-shake", name: "Oreo Shake", category: "Shakes", description: "Cookie crumble, cream & chocolate", price: 139, image: shakeImage, tag: "Premium", popular: true },
-  { id: "kitkat-shake", name: "KitKat Shake", category: "Shakes", description: "Crunchy wafer with chocolate cream", price: 139, image: shakeImage, tag: "Premium" },
-  { id: "cold-coffee-shake", name: "Cold Coffee Shake", category: "Shakes", description: "Bold cold coffee, silky and chilled", price: 139, image: shakeImage, tag: "Premium", popular: true },
-  { id: "brownie-shake", name: "Brownie Shake", category: "Shakes", description: "Chocolate brownie blended with ice cream", price: 169, image: shakeImage, tag: "Special" },
-  { id: "dry-fruit-shake", name: "Dry Fruit Shake", category: "Shakes", description: "Rich milkshake with crunchy dry fruits", price: 169, image: shakeImage, tag: "Special" },
-  { id: "snickers-shake", name: "Snickers Shake", category: "Shakes", description: "Peanut, caramel and chocolate layers", price: 169, image: shakeImage, tag: "Special" },
-  { id: "ferrero-shake", name: "Ferrero Rocher Shake", category: "Shakes", description: "Hazelnut chocolate, extra indulgent", price: 169, image: shakeImage, tag: "Special", popular: true },
-  { id: "biscoff-shake", name: "Lotus Biscoff Shake", category: "Shakes", description: "Caramel biscuit cream with a crisp finish", price: 190, image: shakeImage, tag: "Signature" },
-  { id: "biscoff-brownie-shake", name: "Biscoff Brownie Shake", category: "Shakes", description: "Biscoff, brownie and whipped cream", price: 210, image: shakeImage, tag: "Signature", popular: true },
+  { id: "chocolate-shake", name: "Chocolate Shake", category: "Shakes", description: "Silky chocolate with real milk", price: 90, image: basicShakesImage, tag: "Basic", popular: true },
+  { id: "vanilla-shake", name: "Vanilla Shake", category: "Shakes", description: "Creamy vanilla, softly sweet", price: 90, image: basicShakesImage, tag: "Basic" },
+  { id: "strawberry-shake", name: "Strawberry Shake", category: "Shakes", description: "Fruity, creamy and refreshing", price: 90, image: basicShakesImage, tag: "Basic" },
+  { id: "mango-shake", name: "Mango Shake", category: "Shakes", description: "Mango sunshine in a glass", price: 90, image: basicShakesImage, tag: "Basic" },
+  { id: "butterscotch-shake", name: "Butterscotch Shake", category: "Shakes", description: "Caramel notes with a smooth finish", price: 90, image: basicShakesImage, tag: "Basic" },
+  { id: "oreo-shake", name: "Oreo Shake", category: "Shakes", description: "Cookie crumble, cream & chocolate", price: 139, image: premiumShakesImage, tag: "Premium", popular: true },
+  { id: "kitkat-shake", name: "KitKat Shake", category: "Shakes", description: "Crunchy wafer with chocolate cream", price: 139, image: premiumShakesImage, tag: "Premium" },
+  { id: "cold-coffee-shake", name: "Cold Coffee Shake", category: "Shakes", description: "Bold cold coffee, silky and chilled", price: 139, image: premiumShakesImage, tag: "Premium", popular: true },
+  { id: "brownie-shake", name: "Brownie Shake", category: "Shakes", description: "Chocolate brownie blended with ice cream", price: 169, image: specialShakesImage, tag: "Special" },
+  { id: "dry-fruit-shake", name: "Dry Fruit Shake", category: "Shakes", description: "Rich milkshake with crunchy dry fruits", price: 169, image: specialShakesImage, tag: "Special" },
+  { id: "snickers-shake", name: "Snickers Shake", category: "Shakes", description: "Peanut, caramel and chocolate layers", price: 169, image: specialShakesImage, tag: "Special" },
+  { id: "ferrero-shake", name: "Ferrero Rocher Shake", category: "Shakes", description: "Hazelnut chocolate, extra indulgent", price: 169, image: specialShakesImage, tag: "Special", popular: true },
+  { id: "biscoff-shake", name: "Lotus Biscoff Shake", category: "Shakes", description: "Caramel biscuit cream with a crisp finish", price: 190, image: signatureShakesImage, tag: "Signature" },
+  { id: "biscoff-brownie-shake", name: "Biscoff Brownie Shake", category: "Shakes", description: "Biscoff, brownie and whipped cream", price: 210, image: signatureShakesImage, tag: "Signature", popular: true },
   { id: "veg-sandwich", name: "Veg Sandwich", category: "Sandwiches", description: "Classic fresh vegetable filling", price: 60, image: categoryImages.Sandwiches, popular: true },
   { id: "cheese-sandwich", name: "Cheese Sandwich", category: "Sandwiches", description: "Cheesy, creamy and comforting", price: 70, image: categoryImages.Sandwiches },
   { id: "grilled-sandwich", name: "Grilled Veg Sandwich", category: "Sandwiches", description: "Grilled with fresh vegetables", price: 80, image: categoryImages.Sandwiches },
   { id: "paneer-sandwich", name: "Paneer Sandwich", category: "Sandwiches", description: "Spiced paneer filling, toasted warm", price: 90, image: categoryImages.Sandwiches, popular: true },
   { id: "corn-cheese-sandwich", name: "Corn Cheese Sandwich", category: "Sandwiches", description: "Sweet corn with melted cheese", price: 90, image: categoryImages.Sandwiches },
   { id: "cheese-chilli-toast", name: "Cheese Chilli Toast", category: "Sandwiches", description: "Melted cheese with a chilli kick", price: 100, image: categoryImages.Sandwiches, tag: "Popular" },
-  { id: "chocolate-thick-shake", name: "Chocolate Thick Shake", category: "Thick Shakes", description: "Dense, cold and deeply chocolatey", price: 139, image: categoryImages["Thick Shakes"], tag: "Premium" },
-  { id: "oreo-thick-shake", name: "Oreo Thick Shake", category: "Thick Shakes", description: "Extra cookie crumble, extra thick", price: 149, image: categoryImages["Thick Shakes"], tag: "Premium", popular: true },
-  { id: "kitkat-thick-shake", name: "KitKat Thick Shake", category: "Thick Shakes", description: "Thick chocolate shake with wafer crunch", price: 159, image: categoryImages["Thick Shakes"], tag: "Special" },
-  { id: "brownie-thick-shake", name: "Brownie Thick Shake", category: "Thick Shakes", description: "Brownie pieces in a rich cold shake", price: 169, image: categoryImages["Thick Shakes"], tag: "Special" },
-  { id: "dry-fruit-thick-shake", name: "Dry Fruit Thick Shake", category: "Thick Shakes", description: "Creamy shake with crunchy dry fruits", price: 179, image: categoryImages["Thick Shakes"], tag: "Special" },
-  { id: "biscoff-thick-shake", name: "Biscoff Thick Shake", category: "Thick Shakes", description: "Caramel biscuit cream, thick and chilled", price: 190, image: categoryImages["Thick Shakes"], tag: "Signature" },
+  { id: "chocolate-thick-shake", name: "Chocolate Thick Shake", category: "Thick Shakes", description: "Dense, cold and deeply chocolatey", price: 139, image: premiumShakesImage, tag: "Premium" },
+  { id: "oreo-thick-shake", name: "Oreo Thick Shake", category: "Thick Shakes", description: "Extra cookie crumble, extra thick", price: 149, image: premiumShakesImage, tag: "Premium", popular: true },
+  { id: "kitkat-thick-shake", name: "KitKat Thick Shake", category: "Thick Shakes", description: "Thick chocolate shake with wafer crunch", price: 159, image: premiumShakesImage, tag: "Special" },
+  { id: "brownie-thick-shake", name: "Brownie Thick Shake", category: "Thick Shakes", description: "Brownie pieces in a rich cold shake", price: 169, image: specialShakesImage, tag: "Special" },
+  { id: "dry-fruit-thick-shake", name: "Dry Fruit Thick Shake", category: "Thick Shakes", description: "Creamy shake with crunchy dry fruits", price: 179, image: specialShakesImage, tag: "Special" },
+  { id: "biscoff-thick-shake", name: "Biscoff Thick Shake", category: "Thick Shakes", description: "Caramel biscuit cream, thick and chilled", price: 190, image: signatureShakesImage, tag: "Signature" },
   { id: "samosa", name: "Samosa", category: "Evening Snacks", description: "Crisp pastry with spiced filling", price: 20, image: categoryImages["Evening Snacks"], note: "Per piece", popular: true },
   { id: "samosa-chaat", name: "Samosa Chaat", category: "Evening Snacks", description: "2 samosa, chole and chutneys", price: 50, image: categoryImages["Evening Snacks"], tag: "Popular" },
   { id: "paneer-pakoda", name: "Paneer Pakoda", category: "Evening Snacks", description: "Crisp paneer fritters, 4 pieces", price: 40, image: categoryImages["Evening Snacks"], note: "4 pieces per plate" },
