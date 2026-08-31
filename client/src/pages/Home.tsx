@@ -125,7 +125,7 @@ const dishImages: Record<string, string> = {
   "amul-cheese": "/manus-storage/menu-amul-cheese_80fc73da.jpg",
   "amul-paneer": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3CVkF_07VK_-oZJ4QUwEYSbwkG0akwGh0QiRso_YICg&s=10",
   "amul-curd": "/manus-storage/menu-amul-curd-dahi_538a6c4d.jpg",
-  "other-amul": "/manus-storage/menu-other-amul-products_7acdc132.jpg",
+  "other-amul": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsZa5jl0yqX4w5TccIFxrC3eP8DaGNGNLtpLYGPsqgGQ&s=10",
 };
 
 const categoryImages: Record<string, string> = {
