@@ -1,7 +1,6 @@
-# Restore previous visual-editor changes
+# Sundae and Hot Chocolate image edit
 
-- [x] Reconstruct the earlier image, name, and price edits from the visual-editor result.
-- [x] Reapply valid image URLs to the menu data and repair the malformed Amul Bricks URL.
-- [x] Restore the Amul Icecream label and MRP pricing edits.
-- [x] Keep the intended responsive image-card styling without the accidental inline display override.
-- [x] Run type-check, build, preview verification, and save a new checkpoint.
+- [x] Inspect the current menu image registry for the Sundae and Hot Chocolate entries.
+- [x] Apply the requested Pexels image URLs manually to the matching item entries.
+- [x] Run type-check and production build.
+- [x] Verify the homepage/menu preview and save a new checkpoint.
